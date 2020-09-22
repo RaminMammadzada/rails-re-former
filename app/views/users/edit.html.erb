@@ -1,3 +1,7 @@
+
+
+
+
 <%= form_for @user do |f| %>
   <% if @user.errors.any? %>
     <div id="error_explanation">
@@ -10,11 +14,12 @@
       </ul>
     </div>
   <% end %>
-  Username: <%= f.text_field :username, :value => 'Mikymike' %><br /><br />
-  Email: <%= f.text_field :email, placeholder: 'example@axampler.com' %><br /><br />
-  Password: <%= f.password_field :password %><br /><br />
-  <%= f.submit("Create User") %>
-  
+
+  Username: <%= f.text_field :username, class: 'form-control' %><br /><br />
+  Email: <%= f.text_field :email, class: 'form-control' %><br /><br />
+  Password: <%= f.password_field :password, class: 'form-control' %><br /><br />
+  <%= f.submit("Update User") %>
+
 <%end%>
 
 

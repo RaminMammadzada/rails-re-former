@@ -21,7 +21,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @user.update(user_params)
 
-    redirect_to users_path(@user)
+    redirect_to "/users/new"
   end
 
   def user_params
