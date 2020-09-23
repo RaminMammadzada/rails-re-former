@@ -1,22 +1,11 @@
-<%= form_for @user do |f| %>
-  <% if @user.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this post from being saved:</h2>
+<%= display_errors(@user) %>
 
-      <ul>
-        <% @user.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
+<%= form_for @user do |f| %>
   Username: <%= f.text_field :username, :value => 'Mikymike' %><br /><br />
   Email: <%= f.text_field :email, placeholder: 'example@axampler.com' %><br /><br />
   Password: <%= f.password_field :password %><br /><br />
   <%= f.submit("Create User") %>
-  
 <%end%>
-
 
 <%#= form_tag(users_path, method: :post)  do %>
   <%#= label_tag(:username, "Username: ") %>
