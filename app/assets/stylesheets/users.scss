@@ -1,0 +1,27 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.field_with_errors input {
+  border: 3px solid #f20d11;
+}
+
+.total_errors {
+  background: #f20d11;
+  color: aliceblue;
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+.all_errors {
+  border: #f20d11;
+  background: #f20d11;
+  color: aliceblue;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.all_error_contents {
+  width: fit-content;
+}
