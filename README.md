@@ -9,6 +9,8 @@ In this project we created a simple user system and learn the basics of forms an
 - Created a User controller
 - Created view pages for new and edit user
 - Create migration files with table rules
+- Adjust associations between models
+- Create migration files with required foreign keys
 
 
 ## Built With
@@ -28,9 +30,9 @@ In order to run, you need to install RUBY and Rails in your computer. For window
 Then you can clone the project by typing ```https://github.com/RaminMammadzada/rails-re-former.git```
 
 ### Run app
-- Type ```bundle install``` in the root file of the project. 
+- Type ```bundle install``` in the root file of the project.
+- Type  ```rails db:migrate``` in the root file of the project. 
 - Type ```rails s``` in the root file of the project.
-- Type  ```rails db:migrate``` in the root file of the project.
 
 ## Authors
 
